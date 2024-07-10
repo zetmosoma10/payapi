@@ -1,9 +1,9 @@
-import SpecialOffer from "./pages/Home/components/SpecialOffer";
+import Incentives from "./pages/Home/sections/Incentives";
 
 function App() {
   return (
-    <div className="bg-background_color h-screen">
-      <SpecialOffer />
+    <div className="bg-background_color min-h-screen">
+      <Incentives />
     </div>
   );
 }
