@@ -16,4 +16,18 @@
     font-weight: bold;
     font-family: "DM Serif Display", serif;
   }
+
+  /* Buttons */
+  .btn {
+    @apply font-bold block text-base tracking-[-0.12px]  w-full text-center
+        m-3  pt-4 pb-[14px] rounded-3xl transition-colors duration-150;
+  }
+
+  .btn-primary {
+    @apply bg-dark_pink text-water_white hover:bg-charm_pink;
+  }
+
+  .btn-secondary {
+    @apply text-water_white border border-water_white hover:border-0 bg-transparent hover:bg-water_white hover:text-mirage_blue;
+  }
 }
