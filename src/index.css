@@ -41,4 +41,13 @@
   .grid-1x2 {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  /* Feature */
+  .feature-text {
+    @apply text-base text-light_san_juan_blue mt-6;
+  }
+
+  .feature-header {
+    @apply text-san_juan_blue text-4xl md:text-5xl leading-9 md:leading-[56px] tracking-[-0.28px] md:tracking-[-0.37px];
+  }
 }
