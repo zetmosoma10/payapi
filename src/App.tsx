@@ -1,15 +1,9 @@
-import Button from "./components/Button";
+import SpecialOffer from "./pages/Home/components/SpecialOffer";
 
 function App() {
   return (
-    <div className="w-[800px] bg-mirage_blue">
-      <Button classNames="btn-primary">Button</Button>
-      <Button type="link" classNames="btn-primary">
-        Button
-      </Button>
-      <Button type="link" classNames="btn-secondary">
-        About
-      </Button>
+    <div className="bg-background_color h-screen">
+      <SpecialOffer />
     </div>
   );
 }

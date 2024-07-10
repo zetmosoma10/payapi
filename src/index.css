@@ -17,6 +17,10 @@
     font-family: "DM Serif Display", serif;
   }
 
+  .max-container {
+    @apply max-w-[1110px] w-[90%] mx-auto;
+  }
+
   /* Buttons */
   .btn {
     @apply font-bold block text-base tracking-[-0.12px]  w-full text-center
