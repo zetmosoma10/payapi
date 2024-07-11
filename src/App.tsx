@@ -1,9 +1,10 @@
+import ActionPanel from "./components/ActionPanel";
 import Pricing from "./pages/Pricing/sections/Pricing";
 
 function App() {
   return (
     <div className="bg-background_color min-h-screen overflow-hidden">
-      <Pricing />
+      <ActionPanel />
     </div>
   );
 }

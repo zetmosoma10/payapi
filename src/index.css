@@ -30,11 +30,11 @@
   }
 
   .btn-primary {
-    @apply bg-dark_pink text-water_white hover:bg-charm_pink;
+    @apply bg-dark_pink text-water_white hover:bg-charm_pink focus:bg-charm_pink;
   }
 
   .btn-secondary {
-    @apply text-water_white border px-8 border-water_white hover:border-0 bg-transparent hover:bg-water_white hover:text-mirage_blue;
+    @apply text-water_white border px-8 border-water_white hover:border-0 focus:border-0 bg-transparent hover:bg-water_white focus:bg-water_white  hover:text-mirage_blue focus:text-mirage_blue;
   }
 
   /* Grids */
