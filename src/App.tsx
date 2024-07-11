@@ -1,11 +1,9 @@
-import ImageShowcase from "./pages/About/sections/ImageShowcase";
-import PreviewStats from "./pages/About/sections/PreviewStats";
-import PriceCard from "./pages/Pricing/components/PriceCard";
+import Pricing from "./pages/Pricing/sections/Pricing";
 
 function App() {
   return (
     <div className="bg-background_color min-h-screen overflow-hidden">
-      <PriceCard />
+      <Pricing />
     </div>
   );
 }

@@ -25,7 +25,7 @@
 @layer components {
   /* Buttons */
   .btn {
-    @apply font-bold block text-base tracking-[-0.12px] text-center
+    @apply font-bold block text-base inline-block tracking-[-0.12px] text-center
         pt-4 pb-[14px] rounded-3xl transition-colors duration-150;
   }
 
