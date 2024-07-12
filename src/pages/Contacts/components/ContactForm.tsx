@@ -2,7 +2,7 @@ import Button from "../../../components/Button";
 
 const ContactForm = () => {
   return (
-    <form className="space-y-6 m-20">
+    <form className="space-y-6">
       <input className="input" type="text" placeholder="Name" />
       <div>
         <input className="input" type="email" placeholder="Email Address" />
