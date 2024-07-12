@@ -3,7 +3,7 @@ import ContactForm from "../components/ContactForm";
 
 const Contacts = () => {
   return (
-    <section className="max-container grid gap-y-20 md:gap-y-16 lg:grid-cols-2 lg:gap-x-20">
+    <section className="grid gap-y-20 md:gap-y-16 lg:grid-cols-2 lg:gap-x-20">
       <div className="max-w-[445px] mx-auto lg:max-w-none lg:mx-0">
         <ContactForm />
       </div>

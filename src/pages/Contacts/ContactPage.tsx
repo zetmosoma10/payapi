@@ -1,18 +1,18 @@
-import Pricing from "./sections/Pricing";
+import Contacts from "./sections/Contacts";
 
-const PricingPage = () => {
+const ContactPage = () => {
   return (
     <div className="max-container">
       <h1
         className="font-medium text-center text-san_juan_blue text-3xl tracking-[-0.25px] 
     md:text-5xl md:tracking-[-0.37px] lg:text-left lg:text-6xl lg:tracking-[-0.43px] 
-    mb-12 md:mb-16 lg:mb-[72px]"
+    mb-12 md:mb-16 lg:mb-[72px] max-w-[700px] mx-auto lg:max-w-none lg:mx-0"
       >
-        Pricing
+        Submit a help request and we’ll get in touch shortly.
       </h1>
-      <Pricing />
+      <Contacts />
     </div>
   );
 };
 
-export default PricingPage;
+export default ContactPage;
