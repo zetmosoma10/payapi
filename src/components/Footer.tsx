@@ -2,6 +2,7 @@ import { navLinks } from "../constance";
 import { ImFacebook2 } from "react-icons/im";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa6";
+import { Link, NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -12,7 +13,7 @@ const Footer = () => {
       >
         <div className="md:flex md:items-center md:space-x-16">
           <div>
-            <a href="">
+            <Link to="/">
               <svg width="135" height="38" xmlns="http://www.w3.org/2000/svg">
                 <g fill="#fbfcfe" fillRule="evenodd">
                   <path
@@ -81,17 +82,20 @@ const Footer = () => {
                   </g>
                 </g>
               </svg>
-            </a>
+            </Link>
           </div>
           <ul className="text-center mt-10 space-y-8 md:flex md:items-center md:text-left md:mt-0 md:space-y-0 md:space-x-10">
             {navLinks.map((link) => (
               <li key={link.name}>
-                <a
+                <NavLink
                   className="text-water_white text-opacity-70 hover:text-opacity-100 transition duration-150"
-                  href=""
+                  to={link.path}
+                  style={({ isActive }) =>
+                    isActive ? { opacity: 1 } : undefined
+                  }
                 >
                   {link.name}
-                </a>
+                </NavLink>
               </li>
             ))}
           </ul>

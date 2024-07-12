@@ -1,3 +1,4 @@
+import { NavLink, Link } from "react-router-dom";
 import menuIcon from "../assets/shared/mobile/menu.svg";
 import { navLinks } from "../constance";
 import Button from "./Button";
@@ -8,7 +9,7 @@ const NavBar = () => {
       <div className="max-container flex items-center justify-between mt-10">
         <div className="flex items-center space-x-16">
           <div>
-            <a href="">
+            <Link to="/">
               <svg width="135" height="38" xmlns="http://www.w3.org/2000/svg">
                 <g fill="#36536b" fillRule="evenodd">
                   <path
@@ -77,17 +78,20 @@ const NavBar = () => {
                   </g>
                 </g>
               </svg>
-            </a>
+            </Link>
           </div>
           <ul className="hidden  md:flex md:items-center md:space-x-10 font-bold">
             {navLinks.map((link) => (
               <li key={link.name}>
-                <a
+                <NavLink
+                  style={({ isActive }) =>
+                    isActive ? { opacity: 1 } : undefined
+                  }
                   className="text-san_juan_blue  text-opacity-70 hover:text-opacity-100 transition duration-150"
-                  href=""
+                  to={link.path}
                 >
                   {link.name}
-                </a>
+                </NavLink>
               </li>
             ))}
           </ul>
@@ -95,6 +99,7 @@ const NavBar = () => {
         <div className="flex items-center space-x-6 text-2xl">
           <Button
             type="link"
+            to="contact"
             classNames="hidden md:inline-block btn-primary px-[26px]"
           >
             Schedule a Demo
