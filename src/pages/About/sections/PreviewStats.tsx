@@ -13,7 +13,7 @@ const PreviewStats = () => {
           <Stats key={index} {...stat} />
         ))}
       </div>
-      <div className="text-center md:text-left mt-12 md:mt-16 lg:mt-[72px]">
+      <div className="text-center md:text-left mt-12 md:mt-16 lg:mt-[72px] lg:max-w-[920px] lg:mx-auto">
         <div className="mt-10 md:mt-14 md:flex md:gap-20 md:items-start md:text-left">
           <h2 className="text-2xl md:text-3xl text-san_juan_blue tracking-[-0.18px] text-nowrap">
             The Culture
