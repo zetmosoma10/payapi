@@ -10,7 +10,7 @@ const Hero = () => {
           src={HeroImg}
           alt=""
         />
-        <div className="text-center max-w-[540px] order-2 min-[840px]:order-1 min-[840px]:text-left self-center">
+        <div className="text-center max-w-[550px] lg:max-w-none order-2 min-[840px]:order-1 min-[840px]:text-left self-center">
           <h1 className="font-medium text-san_juan_blue text-3xl tracking-[-0.25px] md:text-5xl lg:text-7xl  md:tracking-[-0.25px] lg:tracking-[-0.55px] ">
             Start building with our APIs for absolutely free.
           </h1>
