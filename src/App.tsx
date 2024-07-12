@@ -1,11 +1,9 @@
-import CallToAction from "./components/CallToAction";
-import Footer from "./components/Footer";
-import NavBar from "./components/NavBar";
+import SideBar from "./components/SideBar";
 
 function App() {
   return (
-    <div className="bg-background_color min-h-screen overflow-hidden">
-      <NavBar />
+    <div className="relative bg-background_color min-h-screen overflow-hidden">
+      <SideBar />
     </div>
   );
 }
