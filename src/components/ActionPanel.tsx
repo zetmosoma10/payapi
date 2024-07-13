@@ -1,6 +1,7 @@
 import { FieldValues, useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod/dist/zod.js";
+import { ToastContainer, toast } from "react-toastify";
 import Button from "./Button";
 
 const schema = z.object({
@@ -13,13 +14,15 @@ const ActionPanel = () => {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm<Input>({
     resolver: zodResolver(schema),
   });
 
   const onSubmit = (data: FieldValues) => {
-    console.log(data);
+    toast(`check your ${data.email}, we sent you OTP`);
+    reset();
   };
 
   return (
@@ -53,6 +56,7 @@ const ActionPanel = () => {
           {errors.email?.message}
         </small>
       )}
+      <ToastContainer position="top-center" />
     </div>
   );
 };
