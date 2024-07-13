@@ -40,6 +40,7 @@ const PriceCard = ({ heading, headerText, price, icon, list }: Props) => {
       <footer>
         <Button
           type="link"
+          to="/contact"
           classNames="btn-secondary text-san_juan_blue hover:border-0
             border-san_juan_blue mt-6 hover:bg-san_juan_blue hover:text-water_white"
         >

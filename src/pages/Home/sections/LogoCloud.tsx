@@ -23,7 +23,8 @@ const LogoCloud = () => {
             experiences for their users.
           </p>
           <Button
-            type="button"
+            type="link"
+            to="about"
             classNames="btn-secondary mx-auto md:mx-0 mt-[60px] md:mt-8 "
           >
             About Us
