@@ -20,6 +20,10 @@
   .max-container {
     @apply max-w-[1110px] w-[90%] mx-auto;
   }
+
+  .no-scroll {
+    overflow: hidden;
+  }
 }
 
 @layer components {

@@ -3,7 +3,11 @@ import menuIcon from "../assets/shared/mobile/menu.svg";
 import { navLinks } from "../constance";
 import Button from "./Button";
 
-const NavBar = () => {
+interface Props {
+  addSideBar: () => void;
+}
+
+const NavBar = ({ addSideBar }: Props) => {
   return (
     <nav>
       <div className="max-container flex items-center justify-between mt-10">
@@ -104,7 +108,12 @@ const NavBar = () => {
           >
             Schedule a Demo
           </Button>
-          <img className="md:hidden" src={menuIcon} alt="" />
+          <img
+            onClick={addSideBar}
+            className="md:hidden cursor-pointer"
+            src={menuIcon}
+            alt=""
+          />
         </div>
       </div>
     </nav>
