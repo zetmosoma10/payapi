@@ -44,6 +44,11 @@
       text-san_juan_blue tracking-[-0.12px] focus:border-opacity-100;
   }
 
+  .input-action-panel {
+    @apply text-mirage_blue md:w-full bg-water_white pt-4 pb-[14px] pl-6 rounded-3xl placeholder:text-base placeholder:text-san_juan_blue
+            placeholder:text-opacity-50 placeholder:font-bold shadow-md md:shadow-none outline-none;
+  }
+
   /* Grids */
   .grid-1x2 {
     grid-template-columns: repeat(2, 1fr);

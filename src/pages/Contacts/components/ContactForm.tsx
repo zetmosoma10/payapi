@@ -29,7 +29,6 @@ const ContactForm = () => {
   } = useForm<FormData>({ resolver: zodResolver(schema) });
 
   const onSubmit = (data: FieldValues) => {
-    console.log(data);
     reset();
   };
 
