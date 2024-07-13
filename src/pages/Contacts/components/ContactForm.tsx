@@ -1,6 +1,7 @@
 import { FieldValues, useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod/dist/zod.js";
+import { ToastContainer, toast } from "react-toastify";
 
 import Button from "../../../components/Button";
 
@@ -29,6 +30,7 @@ const ContactForm = () => {
   } = useForm<FormData>({ resolver: zodResolver(schema) });
 
   const onSubmit = (data: FieldValues) => {
+    toast(`${data.name} thanks for your support, we’ll get in touch shortly.`);
     reset();
   };
 
@@ -116,6 +118,7 @@ const ContactForm = () => {
       >
         Submit
       </Button>
+      <ToastContainer position="top-center" />
     </form>
   );
 };
