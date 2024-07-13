@@ -38,9 +38,7 @@ const Layout = () => {
   return (
     <div className="relative bg-background_color min-h-screen overflow-hidden">
       <NavBar addSideBar={addSideBar} />
-      {sideBarToggle && (
-        <SideBar sideBarToggle={sideBarToggle} removeSideBar={removeSideBar} />
-      )}
+      {sideBarToggle && <SideBar removeSideBar={removeSideBar} />}
       <Outlet />
       <div className="max-container  my-20 md:my-24">
         <CallToAction />

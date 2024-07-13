@@ -1,15 +1,9 @@
-import bgPattern from "../../../assets/shared/desktop/bg-pattern-circle.svg";
 import Button from "../../../components/Button";
 import Logos from "../components/Logos";
 
 const LogoCloud = () => {
   return (
-    <div className="relative bg-mirage_blue py-20 md:py-[88px] md-[100px]">
-      {/* <img
-        className="absolute top-[-40%] md:top-auto md:bottom-[20%] md:left-[-20%]"
-        src={bgPattern}
-        alt=""
-      /> */}
+    <div className=" bg-mirage_blue py-20 md:py-[88px] md-[100px]">
       <div className="max-container grid md:grid-1x2 gap-x-10 gap-y-14">
         <Logos color="#fbfcfe" />
         <div className="text-center z-10 md:text-left order-2 md:order-1 ">

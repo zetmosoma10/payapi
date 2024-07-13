@@ -1,6 +1,6 @@
 import { FieldValues, useForm } from "react-hook-form";
-import { Schema, z } from "zod";
-import { zodResolver } from "@hookform/resolvers/zod";
+import { z } from "zod";
+import { zodResolver } from "@hookform/resolvers/zod/dist/zod.js";
 import Button from "./Button";
 
 const schema = z.object({
@@ -23,7 +23,7 @@ const ActionPanel = () => {
   };
 
   return (
-    <>
+    <div>
       <form
         onSubmit={handleSubmit(onSubmit)}
         className={`flex flex-col md:rounded-3xl md:flex-row md:items-center
@@ -53,7 +53,7 @@ const ActionPanel = () => {
           {errors.email?.message}
         </small>
       )}
-    </>
+    </div>
   );
 };
 

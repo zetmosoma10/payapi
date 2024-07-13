@@ -1,6 +1,6 @@
 import { FieldValues, useForm } from "react-hook-form";
 import { z } from "zod";
-import { zodResolver } from "@hookform/resolvers/zod";
+import { zodResolver } from "@hookform/resolvers/zod/dist/zod.js";
 
 import Button from "../../../components/Button";
 
