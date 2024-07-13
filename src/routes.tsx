@@ -4,11 +4,13 @@ import HomePage from "./pages/Home/HomePage";
 import AboutPage from "./pages/About/AboutPage";
 import ContactPage from "./pages/Contacts/ContactPage";
 import PricingPage from "./pages/Pricing/PricingPage";
+import NotFoundPage from "./pages/NotFoundPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Layout />,
+    errorElement: <NotFoundPage />,
     children: [
       { index: true, element: <HomePage /> },
       { path: "about", element: <AboutPage /> },
