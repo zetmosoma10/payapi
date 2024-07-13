@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import HeroImg from "../../../assets/home/desktop/illustration-phone-mockup.svg";
 import ActionPanel from "../../../components/ActionPanel";
 
@@ -18,9 +19,9 @@ const Hero = () => {
             <ActionPanel />
             <p className="mt-6 text-light_san_juan_blue text-base">
               Have any questions?{" "}
-              <a className="font-bold" href="">
+              <Link to="contact" className="font-bold">
                 Contact Us
-              </a>{" "}
+              </Link>{" "}
             </p>
           </div>
         </div>
